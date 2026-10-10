@@ -1,0 +1,5 @@
+gh.zip
+gh_dir/
+*.log
+.DS_Store
+Thumbs.db

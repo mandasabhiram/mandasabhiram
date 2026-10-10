@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Films | RAPARTHI MAHESH DIGITAL STUDIO STUDIO</title>
+  <meta name="description" content="Explore curated portraits, landscapes, events, and royal wedding films by RAPARTHI MAHESH DIGITAL STUDIO Studio. Fast-loading gallery with interactive lightbox and video reels.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📷</text></svg>">
+</head>
+<body>
+
+  <!-- Site Header Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-title">RAPARTHI MAHESH DIGITAL STUDIO</span>
+        <span class="brand-sub">STUDIO • FINE ART</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary open-booking-btn">Book Session</button>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="brand-logo" style="margin-bottom: 2rem;">
+      <span class="brand-title">RAPARTHI MAHESH DIGITAL STUDIO</span>
+      <span class="brand-sub">STUDIO</span>
+    </div>
+    <nav class="mobile-drawer-links">
+      <a href="index.html" class="mobile-drawer-link">Home</a>
+      <a href="portfolio.html" class="mobile-drawer-link active">Portfolio</a>
+      <a href="about.html" class="mobile-drawer-link">About Studio</a>
+      <a href="services.html" class="mobile-drawer-link">Services & Pricing</a>
+      <a href="contact.html" class="mobile-drawer-link">Contact & Inquiries</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <button class="btn btn-primary open-booking-btn" style="width: 100%;">Book a Session</button>
+      <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">+91 891-9912277 • maheshdigitals3@gmail.com</p>
+    </div>
+  </aside>
+
+  <!-- Page Banner -->
+  <header class="page-banner">
+    <div class="container">
+      <span class="section-tag">RAPARTHI MAHESH Archives</span>
+      <h1 class="page-title">RAPARTHI MAHESH</h1>
+      <p class="page-desc">Explore our fine art visual archive across Portraits, Landscapes, Events, and Weddings. Click any artwork to view in full resolution.</p>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <main class="section">
+    <div class="container">
+      <!-- Category Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="portraits">Portraits</button>
+        <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="weddings">Weddings</button>
+      </div>
+
+      <!-- Gallery Grid with Lightbox Support -->
+      <div class="gallery-grid">
+        <!-- 1. Weddings: Wide Featured -->
+        <div class="gallery-card featured-wide" data-category="weddings">
+          <img 
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80" 
+            alt="The Sunset Vows at Taj Lake Palace" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Weddings</span>
+            <h3 class="gallery-card-title">The Sunset Vows</h3>
+            <p class="gallery-card-location">📍 Taj Lake Palace, Udaipur</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 2. Portraits: Bridal -->
+        <div class="gallery-card" data-category="portraits">
+          <img 
+            src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1000&q=80" 
+            alt="Royal Kundan & Raw Silk" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Portraits</span>
+            <h3 class="gallery-card-title">Royal Kundan & Raw Silk</h3>
+            <p class="gallery-card-location">📍 Rambagh Palace, Jaipur</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 3. Landscapes: Thar Desert -->
+        <div class="gallery-card" data-category="landscapes">
+          <img 
+            src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=80" 
+            alt="Golden Dunes at Twilight" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Landscapes</span>
+            <h3 class="gallery-card-title">Golden Dunes at Twilight</h3>
+            <p class="gallery-card-location">📍 Thar Desert, Jaisalmer</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 4. Portraits: Groom Sherwani -->
+        <div class="gallery-card" data-category="portraits">
+          <img 
+            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80" 
+            alt="The Heritage Sherwani" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Portraits</span>
+            <h3 class="gallery-card-title">The Heritage Sherwani</h3>
+            <p class="gallery-card-location">📍 Falaknuma Palace, Hyderabad</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 5. Events: Sangeet Joy -->
+        <div class="gallery-card" data-category="events">
+          <img 
+            src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=80" 
+            alt="Pure Unfiltered Joy" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Events</span>
+            <h3 class="gallery-card-title">Pure Unfiltered Joy</h3>
+            <p class="gallery-card-location">📍 Beachfront Sangeet, Goa</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 6. Weddings: Sacred Vows -->
+        <div class="gallery-card" data-category="weddings">
+          <img 
+            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=80" 
+            alt="The Sacred Vows" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Weddings</span>
+            <h3 class="gallery-card-title">The Sacred Vows</h3>
+            <p class="gallery-card-location">📍 Heritage Mandap, Bengaluru</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 7. Landscapes: Palace Island -->
+        <div class="gallery-card" data-category="landscapes">
+          <img 
+            src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=1000&q=80" 
+            alt="A Thousand Fairy Lights" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Landscapes</span>
+            <h3 class="gallery-card-title">A Thousand Fairy Lights</h3>
+            <p class="gallery-card-location">📍 Jagmandir Island Palace, Udaipur</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 8. Portraits: Editorial -->
+        <div class="gallery-card" data-category="portraits">
+          <img 
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" 
+            alt="Sartorial Shadows" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Portraits</span>
+            <h3 class="gallery-card-title">Sartorial Shadows</h3>
+            <p class="gallery-card-location">📍 Studio Vogue, Mumbai</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 9. Events: Candlelight Celebration -->
+        <div class="gallery-card" data-category="events">
+          <img 
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80" 
+            alt="Candlelight Banquet" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Events</span>
+            <h3 class="gallery-card-title">Candlelight Banquet</h3>
+            <p class="gallery-card-location">📍 Neemrana Fort-Palace</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 10. Landscapes: Misty Horizon -->
+        <div class="gallery-card" data-category="landscapes">
+          <img 
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" 
+            alt="Misty Pichola Dawn" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Landscapes</span>
+            <h3 class="gallery-card-title">Misty Pichola Dawn</h3>
+            <p class="gallery-card-location">📍 Lake Pichola, Rajasthan</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 11. Weddings: Heirlooms & Rings -->
+        <div class="gallery-card" data-category="weddings">
+          <img 
+            src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1000&q=80" 
+            alt="Sacred Gold Heirlooms" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Weddings</span>
+            <h3 class="gallery-card-title">Sacred Gold Heirlooms</h3>
+            <p class="gallery-card-location">📍 Taj Mahal Palace, Mumbai</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <!-- 12. Events: Midnight Festivities -->
+        <div class="gallery-card" data-category="events">
+          <img 
+            src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1000&q=80" 
+            alt="Midnight Festivities" 
+            class="gallery-card-img"
+            loading="lazy"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-card-category">Events</span>
+            <h3 class="gallery-card-title">Midnight Festivities</h3>
+            <p class="gallery-card-location">📍 Alsisar Haveli, Jaipur</p>
+          </div>
+          <div class="gallery-card-zoom-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Visual Divider -->
+  <div class="divider-gold">
+    <span class="divider-gold-icon">✦</span>
+  </div>
+
+  <!-- Video Portfolio Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Cinematic Motion</span>
+        <h2 class="section-title">Video Highlight Reels</h2>
+        <p class="section-desc">Experience our signature 4K cinema films. Sweeping aerials, orchestral compositions, and raw, heartfelt wedding vows.</p>
+      </div>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card open-video-btn" data-video-title="The Royal Udaipur Union (4K Teaser)" data-video-desc="Oberoi Udaivilas, Rajasthan • 3-Day Marquee Wedding Film">
+          <div class="video-thumbnail-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+              alt="Udaipur Wedding Film" 
+              class="video-thumbnail"
+              loading="lazy"
+            >
+            <div class="video-play-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <span class="video-category-tag">Cinematic Teaser</span>
+            <span class="video-duration">03:45</span>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">The Royal Udaipur Union</h3>
+            <div class="video-meta">
+              <span>📍 Oberoi Udaivilas, Rajasthan</span>
+              <span>•</span>
+              <span>4K Cinema</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card open-video-btn" data-video-title="Goa Coastal Vows (Sundowner Highlight)" data-video-desc="Morjim Beachfront, Goa • Romantic Sunset Vows">
+          <div class="video-thumbnail-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80" 
+              alt="Goa Wedding Film" 
+              class="video-thumbnail"
+              loading="lazy"
+            >
+            <div class="video-play-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <span class="video-category-tag">Highlight Reel</span>
+            <span class="video-duration">02:30</span>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Goa Coastal Vows</h3>
+            <div class="video-meta">
+              <span>📍 Morjim Beach, Goa</span>
+              <span>•</span>
+              <span>Sundowner Film</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card open-video-btn" data-video-title="Thar Desert Mirage (Pre-Wedding Love Story)" data-video-desc="Sam Sand Dunes, Jaisalmer • Stylized Concept Story">
+          <div class="video-thumbnail-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=80" 
+              alt="Desert Romance Film" 
+              class="video-thumbnail"
+              loading="lazy"
+            >
+            <div class="video-play-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <span class="video-category-tag">Concept Film</span>
+            <span class="video-duration">04:15</span>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Thar Desert Mirage</h3>
+            <div class="video-meta">
+              <span>📍 Sam Sand Dunes, Jaisalmer</span>
+              <span>•</span>
+              <span>Drone Cinema</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deposit Booking Promo Banner -->
+      <div style="margin-top: 5.5rem; background: var(--bg-card); border: 1px solid var(--border-active); border-radius: var(--radius-lg); padding: 3.75rem 2.5rem; text-align: center; box-shadow: var(--shadow-card);">
+        <span class="section-tag">Instant Reservation</span>
+        <h2 class="section-title">Schedule a Session & Pay Deposit</h2>
+        <p class="section-desc" style="margin-bottom: 2.25rem;">
+          Lock your preferred wedding or portrait date immediately. Secure your slot with our transparent reservation deposit system (Credit/Debit Card or UPI).
+        </p>
+        <button class="btn btn-primary open-booking-btn" style="padding: 1rem 2.5rem;">
+          Book Session & Pay Deposit
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal Player -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-container">
+      <button id="closeVideoModal" class="video-modal-close" aria-label="Close Video">✕</button>
+      <div class="video-player-wrapper">
+        <video id="portfolioVideoPlayer" controls poster="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-modal-details">
+        <h3 id="videoModalTitle" class="video-modal-title">Film Title</h3>
+        <p id="videoModalDesc" class="video-modal-desc">Film Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox-modal">
+    <button class="lightbox-btn lightbox-close" aria-label="Close Lightbox">✕</button>
+    <button class="lightbox-btn lightbox-prev" aria-label="Previous Image">‹</button>
+    <button class="lightbox-btn lightbox-next" aria-label="Next Image">›</button>
+    <div class="lightbox-container">
+      <img src="" alt="Fullscreen Artwork" class="lightbox-image">
+      <div class="lightbox-details">
+        <h4 class="lightbox-title">Artwork Title</h4>
+        <p class="lightbox-desc">Artwork Details</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Booking & Deposit Modal (Global) -->
+  <div id="bookingModal" class="booking-modal">
+    <div class="booking-container">
+      <button id="closeBookingModal" class="booking-modal-close" aria-label="Close Booking">✕</button>
+
+      <!-- Steps Indicator -->
+      <div class="booking-steps-bar">
+        <div class="step-indicator active" data-step="1">
+          <div class="step-circle">1</div>
+          <span class="step-label">Package</span>
+        </div>
+        <div class="step-indicator" data-step="2">
+          <div class="step-circle">2</div>
+          <span class="step-label">Schedule</span>
+        </div>
+        <div class="step-indicator" data-step="3">
+          <div class="step-circle">3</div>
+          <span class="step-label">Deposit</span>
+        </div>
+        <div class="step-indicator" data-step="4">
+          <div class="step-circle">4</div>
+          <span class="step-label">Receipt</span>
+        </div>
+      </div>
+
+      <!-- Step 1: Package Selection -->
+      <div class="booking-step-pane active" id="bookingStep1">
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.75rem; color: #FFFFFF;">Select Your Experience</h3>
+          <p style="color: var(--text-secondary); font-size: 0.88rem;">Choose the collection that fits your celebration. A deposit secures your date.</p>
+        </div>
+
+        <div class="package-radio-group">
+          <label class="package-option selected" data-package="portrait" data-price="25000" data-deposit="5000">
+            <div>
+              <div class="package-option-title">Fine Art Portrait Session</div>
+              <div class="package-option-desc">Studio or outdoor session, 20 edited images</div>
+            </div>
+            <div class="package-option-prices">
+              <div class="package-total-price">₹25,000</div>
+              <span class="package-deposit-tag">Deposit: ₹5,000</span>
+            </div>
+          </label>
+
+          <label class="package-option" data-package="prewedding" data-price="45000" data-deposit="10000">
+            <div>
+              <div class="package-option-title">Pre-Wedding Concept Shoot</div>
+              <div class="package-option-desc">Stylized outdoor shoot + 3-min film + drone</div>
+            </div>
+            <div class="package-option-prices">
+              <div class="package-total-price">₹45,000</div>
+              <span class="package-deposit-tag">Deposit: ₹10,000</span>
+            </div>
+          </label>
+
+          <label class="package-option" data-package="silver" data-price="175000" data-deposit="25000">
+            <div>
+              <div class="package-option-title">Silver Heritage Wedding</div>
+              <div class="package-option-desc">2 Days, Candid + Traditional, 4K Teaser</div>
+            </div>
+            <div class="package-option-prices">
+              <div class="package-total-price">₹1,75,000</div>
+              <span class="package-deposit-tag">Deposit: ₹25,000</span>
+            </div>
+          </label>
+
+          <label class="package-option" data-package="gold" data-price="325000" data-deposit="50000">
+            <div>
+              <div class="package-option-title">Gold Royal Collection (Flagship)</div>
+              <div class="package-option-desc">4-Crew team, drone, Italian album, full film</div>
+            </div>
+            <div class="package-option-prices">
+              <div class="package-total-price">₹3,25,000</div>
+              <span class="package-deposit-tag">Deposit: ₹50,000</span>
+            </div>
+          </label>
+        </div>
+
+        <button class="btn btn-primary" id="toStep2Btn" style="width: 100%;">Continue to Schedule →</button>
+      </div>
+
+      <!-- Step 2: Date & Contact Details -->
+      <div class="booking-step-pane" id="bookingStep2">
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.75rem; color: #FFFFFF;">Select Date & Details</h3>
+          <p style="color: var(--text-secondary); font-size: 0.88rem;">Tell us when and where your celebration will take place.</p>
+        </div>
+
+        <div class="form-grid" style="margin-bottom: 2rem;">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" id="bookClientName" required placeholder="e.g. Radhika Sharma" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" id="bookClientEmail" required placeholder="radhika@example.com" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone / WhatsApp *</label>
+            <input type="tel" id="bookClientPhone" required placeholder="+91 98765 43210" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Session Date *</label>
+            <input type="date" id="bookEventDate" required class="form-control">
+          </div>
+          <div class="form-group full-width">
+            <label class="form-label">Location / Venue</label>
+            <input type="text" id="bookEventVenue" placeholder="e.g. Falaknuma Palace, Hyderabad or Goa Beachfront" class="form-control">
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem;">
+          <button class="btn btn-outline" id="backToStep1Btn" style="flex: 1;">← Back</button>
+          <button class="btn btn-primary" id="toStep3Btn" style="flex: 2;">Proceed to Deposit Payment →</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Simulated Payment Checkout -->
+      <div class="booking-step-pane" id="bookingStep3">
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.75rem; color: #FFFFFF;">Secure Deposit Payment</h3>
+          <p style="color: var(--text-secondary); font-size: 0.88rem;">Complete your reservation with a secure simulated deposit.</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="booking-summary-box">
+          <div class="summary-row">
+            <span>Selected Package:</span>
+            <strong id="summaryPackageName">Gold Royal Collection</strong>
+          </div>
+          <div class="summary-row">
+            <span>Session Date:</span>
+            <span id="summarySessionDate">Nov 14, 2026</span>
+          </div>
+          <div class="summary-row">
+            <span>Total Package Value:</span>
+            <span id="summaryTotalAmount">₹3,25,000</span>
+          </div>
+          <div class="summary-row highlight">
+            <span>Reservation Deposit Due Now:</span>
+            <strong id="summaryDepositAmount">₹50,000</strong>
+          </div>
+        </div>
+
+        <!-- Payment Tabs -->
+        <div class="payment-tabs">
+          <button class="payment-tab-btn active" data-tab="card">
+            💳 Credit / Debit Card
+          </button>
+          <button class="payment-tab-btn" data-tab="upi">
+            📱 UPI / QR Code
+          </button>
+        </div>
+
+        <!-- Card Pane -->
+        <div class="payment-pane active" id="cardPaymentPane">
+          <div class="form-grid" style="margin-bottom: 1.5rem;">
+            <div class="form-group full-width">
+              <label class="form-label">Card Number</label>
+              <input type="text" id="payCardNumber" placeholder="4532 •••• •••• 8892" value="4532 8921 4452 8892" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Expiry (MM/YY)</label>
+              <input type="text" id="payCardExpiry" placeholder="12/28" value="12/28" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label">CVV</label>
+              <input type="password" id="payCardCvv" placeholder="•••" value="882" maxlength="4" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <!-- UPI Pane -->
+        <div class="payment-pane" id="upiPaymentPane">
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+            <div style="width: 130px; height: 130px; background: #FFFFFF; border-radius: 8px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+              📷
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Scan or enter your Virtual Payment Address (VPA):</p>
+            <input type="text" placeholder="yourname@okhdfcbank" value="client@upi" class="form-control" style="max-width: 320px; margin: 0 auto; text-align: center;">
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem;">
+          <button class="btn btn-outline" id="backToStep2Btn" style="flex: 1;">← Back</button>
+          <button class="btn btn-primary" id="confirmPaymentBtn" style="flex: 2;">
+            Pay Deposit (<span id="payBtnDeposit">₹50,000</span>)
+          </button>
+        </div>
+        <p style="font-size: 0.72rem; color: var(--text-muted); text-align: center; margin-top: 1rem;">
+          🔒 256-bit Encrypted Simulated Gateway. No real charges occur.
+        </p>
+      </div>
+
+      <!-- Step 4: Booking Receipt Confirmed -->
+      <div class="booking-step-pane" id="bookingStep4">
+        <div class="booking-receipt-card">
+          <div class="receipt-check-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3 style="font-family: var(--font-serif); font-size: 2.2rem; color: #FFFFFF; margin-bottom: 0.5rem;">Session Reserved!</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem;">
+            Your date has been reserved in RAPARTHI MAHESH DIGITAL STUDIO Studio's master calendar.
+          </p>
+          <div class="receipt-ref-pill" id="receiptRefCode">BOOKING REF: LDS-892144</div>
+
+          <div class="receipt-table">
+            <div class="receipt-table-row">
+              <span>Client Name:</span>
+              <strong id="receiptClientName">Radhika Sharma</strong>
+            </div>
+            <div class="receipt-table-row">
+              <span>Package:</span>
+              <strong id="receiptPackageName">Gold Royal Collection</strong>
+            </div>
+            <div class="receipt-table-row">
+              <span>Reserved Date:</span>
+              <strong id="receiptDate">Nov 14, 2026</strong>
+            </div>
+            <div class="receipt-table-row">
+              <span>Deposit Paid:</span>
+              <strong style="color: var(--accent-gold);" id="receiptDepositPaid">₹50,000 (Confirmed)</strong>
+            </div>
+            <div class="receipt-table-row">
+              <span>Remaining Balance:</span>
+              <span id="receiptBalance">₹2,75,000 (Due prior to shoot)</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="window.print();">🖨️ Print / Save Receipt</button>
+            <button class="btn btn-outline" id="closeReceiptBtn">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-title">RAPARTHI MAHESH DIGITAL STUDIO</div>
+          <div class="brand-sub">STUDIO • FINE ART</div>
+          <p>An elite photography & cinematography studio dedicated to preserving genuine love stories, cultural heritage, and fine-art portraits worldwide.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://pinterest.com" class="social-icon" target="_blank" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            </a>
+            <a href="https://youtube.com" class="social-icon" target="_blank" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio Gallery</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Packages & Pricing</a></li>
+            <li><a href="blog.html">The Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Offerings</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Wedding Cinematography</a></li>
+            <li><a href="services.html">Pre-Wedding Shoots</a></li>
+            <li><a href="services.html">Destination Weddings</a></li>
+            <li><a href="services.html">Editorial Portraits</a></li>
+            <li><a href="services.html">Fine Art Italian Albums</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4 class="footer-title">The Studio Journal</h4>
+          <p>Subscribe for wedding styling advice, Golden Hour guides, and private exhibition updates.</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required class="newsletter-input">
+            <button type="submit" class="btn btn-primary" style="padding: 0.85rem 1.35rem;">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 RAPARTHI MAHESH DIGITAL STUDIO STUDIO. All Rights Reserved.</p>
+        <div class="back-to-top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
